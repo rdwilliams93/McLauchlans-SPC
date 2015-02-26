@@ -1,13 +1,79 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-		<title>
-			McLauchlan's SPC
-		</title?
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>McLauchlan's SPC'</title>
+  
+  <link rel="icon" type="image/png" href="images/favicon.jpg">
 		
-		<link rel="stylesheet" type="text/css" href="/style.css" />
-		<!-- <link href='' rel='stylesheet' type='text/css'> -->
-		
-		
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css">
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+  <div id="w" class="clearfix">
+    <ul id="sidemenu">
+      <li>
+        <a href="#home-content" class="open"><i class="icon-home icon-large"></i><strong>Home</strong></a>
+      </li>
+
+      <li>
+        <a href="#about-content"><i class="icon-info-sign icon-large"></i><strong>About</strong></a>
+      </li>
+      
+      <li>
+        <a href="#ideas-content"><i class="icon-lightbulb icon-large"></i><strong>Ideas</strong></a>
+      </li>
+      
+      <li>
+        <a href="#contact-content"><i class="icon-envelope icon-large"></i><strong>Contact</strong></a>
+      </li>
+    </ul>
+    
+    <div id="content">
+        <div id="home-content" class="contentblock">
+          <h1>The Main Page!</h1>
+			<p>this is the default psge</p>
+        </div><!-- @end #home-content -->
+        
+        
+        <div id="about-content" class="contentblock hidden">
+			<p>this is tab 2</p>
+        </div><!-- @end #about-content -->
+        
+        <div id="ideas-content" class="contentblock hidden">
+          <p>this is tab 3</p>
+        </div><!-- @end #ideas-content -->
+        
+        <div id="contact-content" class="contentblock hidden">
+          <p>This is tab 4</p>
+        </div><!-- @end #contact-content -->
+    </div><!-- @end #content -->
+  </div><!-- @end #w -->
+<script type="text/javascript">
+$(function(){
+  $('#sidemenu a').on('click', function(e){
+    e.preventDefault();
+
+    if($(this).hasClass('open')) {
+      // do nothing because the link is already open
+    } else {
+      var oldcontent = $('#sidemenu a.open').attr('href');
+      var newcontent = $(this).attr('href');
+      
+      $(oldcontent).fadeOut('fast', function(){
+        $(newcontent).fadeIn().removeClass('hidden');
+        $(oldcontent).addClass('hidden');
+      });
+      
+     
+      $('#sidemenu a').removeClass('open');
+      $(this).addClass('open');
+    }
+  });
+});
+</script>
+</body>
+</html>
