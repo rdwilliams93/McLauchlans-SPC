@@ -103,6 +103,7 @@ a:hover { color: #7299cf; }
   width: 15em;
   float: left;  
   border-right: 1px solid #c9c9c9;
+  
 }
 
 
@@ -111,7 +112,7 @@ a:hover { color: #7299cf; }
   text-align: center;
   border-top: 1px solid #d1d1d1;
   font-size: 1.1em; 
-  
+  vertical-align: middle;
 }
 
 #sidemenu li a { 
@@ -139,7 +140,7 @@ a:hover { color: #7299cf; }
 }
 
 #sidemenu li p {
-  vertical-align: middle;
+  margin-top: 3em;
 }
 
 /* extra styles */
