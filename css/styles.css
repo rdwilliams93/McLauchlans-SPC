@@ -106,16 +106,24 @@ a:hover { color: #7299cf; }
 }
 
 
-#sidemenu li { display: block; text-align: center; border-top: 1px solid #fff; font-size: 1.1em; }
+#sidemenu li { 
+  display: block; 
+  text-align: center;
+  border-top: 1px solid #d1d1d1;
+  font-size: 1.1em; 
+  
+}
 
 #sidemenu li a { 
   display: block;
   padding: 6px 2px;
   color: #555;
+  height: 20vh;
   text-decoration: none;
   border-bottom: 1px solid #d1d1d1;
-
+  
 }
+
 #sidemenu li a:hover {
   background: #f2f2f2;
 }
@@ -127,7 +135,11 @@ a:hover { color: #7299cf; }
 
 #sidemenu li a.open {
   width: 101%;
-  background: #fff;
+  background: #d1d1d1;
+}
+
+#sidemenu li p {
+  vertical-align: middle;
 }
 
 /* extra styles */
