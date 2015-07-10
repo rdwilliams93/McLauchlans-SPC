@@ -134,4 +134,6 @@ jQuery(document).ready(function($) {
         asNavFor            : "",                //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
     });
 
+	
 });
+
