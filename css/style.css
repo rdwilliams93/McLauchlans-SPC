@@ -75,8 +75,13 @@ h1,h2, h3, h4, h5, h6 {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-weight:700;
 	line-height:1.1em;
-	color:#000;
+	color:inherit;
 	margin-bottom: 20px;
+	 
+}
+
+h4 a {
+	color: #353535;
 }
 
 p {
@@ -159,7 +164,7 @@ img.img-polaroid {
 
 #featured{
 	width: 100%;
-	background:#fcfcfc;
+	background:#fff;
 	position:relative;
 	margin:0;
 	padding:0;
@@ -1430,6 +1435,11 @@ article img.pull-right, article .align-right{
 		float: none;
 		width: 100%;
 	}
+	
+	.navbar-default {
+		background-color: #FFFFF;
+		border-color: #e7e7e7;
+}
 
 	header .navbar-nav > li  {
 		padding-bottom: 0;
