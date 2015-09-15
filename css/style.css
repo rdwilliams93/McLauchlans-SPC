@@ -248,6 +248,10 @@ section.callaction {
 	padding-top: 5em;
 }
 
+ul #socialMedia  ul img{
+	width: 3em;
+}
+
 /* --- Call to action --- */
 
 .cta-text {
@@ -639,7 +643,8 @@ ul.team-detail li h4, ul.team-detail li label{
 ul.team-detail li ul.social-network {
 	border:none;
 	margin:0;
-	padding:0;
+	padding-top:1em;
+	margin-top: 1em;
 }
 
 ul.team-detail li ul.social-network li {
@@ -1137,6 +1142,7 @@ ul.social-network {
 	list-style:none;
 	margin:0;
 	float:right;
+	margin-top: 1em;
 }
 
 ul.social-network li {
