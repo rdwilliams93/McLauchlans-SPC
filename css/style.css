@@ -152,7 +152,10 @@ img.img-polaroid {
 	
 }
 
-
+.navbar-default {
+		background: #FE9A2E;
+		border-color: #e7e7e7;
+}
 /* --- header -- */
 
 
@@ -270,7 +273,7 @@ ul #socialMedia  ul img{
 	width: 100%;
 }
 .box-gray  {
-	background: #f8f8f8;
+	background: #FE9A2E;
 	padding: 20px 20px 30px;
 }
 .box-gray  h4,.box-gray  i {
@@ -1113,9 +1116,10 @@ ul.time-post li.time{
 16. Footer
 ================================ */
 
-footer{
+body footer{
 	padding:50px 0 0 0;
 	color:#f8f8f8;
+	background: #FE9A2E ;
 }
 
 footer a {
@@ -1443,7 +1447,7 @@ article img.pull-right, article .align-right{
 	}
 	
 	.navbar-default {
-		background-color: #FFFFF;
+		background: #FE9A2E;
 		border-color: #e7e7e7;
 }
 
